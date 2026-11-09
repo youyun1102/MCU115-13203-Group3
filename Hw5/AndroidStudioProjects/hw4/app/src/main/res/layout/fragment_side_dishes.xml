@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvSideTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Select Side Dishes (choose at least one)"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/llSideDishes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tvSideTitle"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <CheckBox
+            android:id="@+id/cbFries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fries"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/cbSalad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salad"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/cbCorn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Corn Cup"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnNext2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Done"
+        app:layout_constraintTop_toBottomOf="@id/llSideDishes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
